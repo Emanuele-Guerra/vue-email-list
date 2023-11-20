@@ -13,9 +13,10 @@ createApp({
             if(resp.data.success){
                 for (let i = 0; i <= 10; i++) {
                     console.log("SONO NEL FOR");
-                    this.mail[i] = resp.data.response
+                    this.mail.i = resp.data.response
+                    this.mail.push(i)
                     
-                    console.log(this.mail);
+                    console.log("questa mail " + this.mail);
 
             }
                 
